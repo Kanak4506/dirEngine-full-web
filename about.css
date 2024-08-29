@@ -1,0 +1,41 @@
+body::-webkit-scrollbar{
+    display: none;
+}
+.i {
+    font-family: cursive;
+}
+
+.bg_container {
+    z-index: -1;
+}
+
+.left_bg,
+.right_bg {
+    width: 50vw;
+    background-image: url('assets/images/bg_2.jpg');
+    height: 64.8vh;
+}
+
+.nav,
+.what {
+    width: 65%;
+}
+
+.active {
+    background-color: #78d5ef;
+    color: white;
+    border-radius: 24px;
+}
+
+.nope {
+    color: #a4a3a3;
+}
+
+.nope:hover {
+    color: black;
+}
+
+
+.xx div {
+    background-color: #fce0dc;
+}

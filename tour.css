@@ -1,0 +1,55 @@
+body::-webkit-scrollbar{
+    display: none;
+}
+body{
+    overflow-x: hidden;
+}
+.bg_image{
+    background-image: url('assets/images/bg_3.jpg');
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+.nav{
+    width: 60%;
+}
+.text_color{
+    display: flex;
+    /* align-items: center; */
+    position: relative;  
+    font-family: "Poppins", sans-serif;  
+}
+
+.text h1{
+    color: #9b9393;
+}
+
+.text h2{
+    color: #9b9393;
+}
+
+
+.text h1, .text_change h1, .text h2, .text_change h2{
+    font-size: 3vw;
+    font-weight: 400;
+    position: absolute;
+    left: 25%;
+    top: 40%;
+    width: 70%;
+
+}
+
+.text_change h2, .text h2{
+    margin: 100px 0px;
+   
+}
+.text_change h1, .text_change h2{
+    width: 0%;
+    white-space: nowrap ;
+    /* text-wrap: nowrap; */   /* koi bhi ek use krlo */
+    overflow: hidden;
+    color: #333;
+}
+footer i{
+    background-color: #2d333c;
+}

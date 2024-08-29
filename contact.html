@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DirEngine.|Contact Us</title>
+    <link rel="stylesheet" href="contact.css">  
+</head>
+
+<body>
+    <div class="container">
+        <div class="main flex flex-col items-center">
+            <div class="nav my-2 hidden lg:text-4 md:flex justify-between items-center p-3 text-black">
+                <div class="logo text-xl font-extrabold">dirEngine.</div>
+                <div class="right_items md:text-sm list-none flex items-center">
+                    <li class="trans p-5 text-lg hover:text-gray-400 cursor-pointer "><a href="index.html">Home</a>
+                    </li>
+                    <li class="trans p-5 text-lg hover:text-gray-400 cursor-pointer"><a href="about.html">About</a>
+                    </li>
+                    <li class="trans p-5 text-lg hover:text-gray-400 cursor-pointer"><a href="tour.html">Tour</a>
+                    </li>
+                    <li class="trans p-5 text-lg hover:text-gray-400 cursor-pointer"><a href="hotel.html">Hotels</a>
+                    </li>
+                    <li class="trans p-5 text-lg hover:text-gray-400 cursor-pointer"><a href="blog.html">Blog</a>
+                    </li>
+                    <li class="trans p-5 text-lg hover:text-gray-400 cursor-pointer"><a href="contact.html">Contact</a>
+                    </li>
+                    <button
+                        class=" trans md:rounded-3xl border lg:rounded-full p-4 hover:bg-red-500 hover:border-red-500">Add
+                        listing</button>
+                </div>
+            </div>
+        </div>
+        <h1>Registration</h1>
+        <form action="home.html" onsubmit="return formValidation()" method="post">
+
+            <div class="form_item" id="firstname">
+                First Name: <br><input type="text" id="f_first_name" required><br>
+                <b><span class="form_error fname"></span></b>
+            </div>
+
+
+            <div class="form_item" id="lastname">
+                Last Name: <br><input type="text" id="f_last_name" required><br>
+                <b><span class="form_error flast"></span></b>
+            </div>
+
+            <div class="form_item" id="email">
+                E-mail: <br><input type="email" id="f_email" required><br>
+                <b><span class="form_error fmail"></span></b>
+            </div>
+
+            <div class="form_item" id="phone">
+                Telephone: <br><input type="tel" id="f_phone" required><br>
+                <b><span class="form_error fphone"></span></b>
+            </div>
+
+            <div class="form_item" id="password">
+                Password: <br><input type="password" id="f_password" required><br>
+                <b><span class="form_error fpass"></span></b>
+            </div>
+
+            <input type="submit" value="Submit" class="submit_btn">
+
+        </form>
+    </div>
+    <script src="contact.js">
+
+    </script>
+</body>
+
+</html>

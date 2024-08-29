@@ -1,0 +1,25 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.bg_image {
+    background-image: url('assets/images/ll.jpg');
+    z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav {
+    width: 60%;
+}
+
+.move, .moves {
+    background-color: #3fa981;
+    font-family: cursive;
+    color: #fff;
+}
+
+.marque {
+    flex-shrink: 0;
+}

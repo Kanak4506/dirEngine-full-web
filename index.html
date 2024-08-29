@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Fredoka:wght@300..700&family=Gothic+A1:wght@300;400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mukta:wght@200;300;400;500;600;700;800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yatra+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main_container  select-none m-0 p-0 box-border">
+        <div class="nav_bar md:hidden p-4 bg-black flex items-center justify-between">
+            <div class="logo text-lg text-white font-bold">dirEngine.</div>
+            <div class="right_items flex items-center text-gray-500" id="menu_btn">
+                <img src="assets/icons/menu.svg"> MENU
+            </div>
+        </div>
+        <div class="menu_drop hidden text-white p-2 list-none bg-black">
+            <li class="trans p-5 hover:text-gray-400 ">Home</li>
+            <li class="trans p-5 hover:text-gray-400 ">About</li>
+            <li class="trans p-5 hover:text-gray-400 ">Tour</li>
+            <li class="trans p-5 hover:text-gray-400 ">Hotels</li>
+            <li class="trans p-5 hover:text-gray-400 ">Blog</li>
+            <li class="trans p-5 hover:text-gray-400 ">Contact</li>
+            <li> <button class=" trans w-full flex border rounded-full p-4 hover:bg-red-500 hover:border-red-500">Add
+                    listing</button></li>
+        </div>
+
+        <div class="hero_section h-screen w-screen flex flex-col items-center justify-center relative text-white">
+            <div class="hero_bg absolute h-screen w-screen"></div>
+            <div class="hero_content  h-full w-full mx-auto my-auto p-4 pb-0">
+                <div class="nav hidden md:flex justify-between items-center w-full p-3">
+                    <div class="logo text-xl font-bold">dirEngine.</div>
+                    <div class="right_items md:text-sm list-none flex items-center">
+                        <li class="trans p-5 hover:text-gray-400 cursor-pointer "><a href="index.html">Home</a></li>
+                        <li class="trans p-5 hover:text-gray-400 cursor-pointer"><a href="about.html">About</a></li>
+                        <li class="trans p-5 hover:text-gray-400 cursor-pointer"><a href="tour.html">Tour</a></li>
+                        <li class="trans p-5 hover:text-gray-400 cursor-pointer"><a href="hotel.html">Hotels</a></li>
+                        <li class="trans p-5 hover:text-gray-400 cursor-pointer"><a href="blog.html">Blog</a></li>
+                        <li class="trans p-5 hover:text-gray-400 cursor-pointer"><a href="contact.html">Contact</a></li>
+                        <button
+                            class=" trans md:rounded-3xl border lg:rounded-full p-4 hover:bg-red-500 hover:border-red-500">Add
+                            listing</button>
+                    </div>
+                </div>
+                <div class="hero_material flex flex-col justify-center">
+                    <h1 class="m-0 md:text-6xl md:my-3 font-bold">Explore</h1>
+                    <h1 class="m-0 text-6xl md:my-3 font-extralight">your amazing city</h1>
+                    <p class="tracking-wide my-4 opacity-80">Find great places to stay, eat, shop, or visit from
+                        local
+                        experts.</p>
+                    <div class="input_container my-5 flex  items-center">
+                        <input class="md:p-5 md:mx-0 w-4/12 md:w-96 p-3.5 border-r text-black outline-none" type="text"
+                            placeholder="Ex:food,service,hotel">
+                        <select class="border-l text-black outline-none w-4/12 p-3.5 md:mx-0 md:p-5 md:py-5 md:w-96"
+                            name="place" id="place">
+                            <option value="where" class="text-gray-400">Where</option>
+                            <option value="Paris">Paris</option>
+                            <option value="India">India</option>
+                            <option value="Berlin Germany">Berlin Germany</option>
+                            <option value="Paris">London</option>
+                        </select>
+                        <button class="bg-red-500 p-3.5 sm:w-4/12 md:p-5 md:px-10">Search</button>
+                    </div>
+                    <p class="tracking-wide opacity-80">Or browse the highlights</p>
+                    <div class="rest_items flex-wrap flex flex-col md:flex-row my-5">
+                        <div
+                            class="md:p-4 md:m-3 mt-1 p-2 text-sm md:text-base flex items-center bg-white text-black font-light  hover:bg-red-500 hover:text-white trans">
+                            <svg class="mx-1" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="2em"
+                                viewBox="0 0 32 32">
+                                <path fill="black"
+                                    d="M6.68 2c-1.138 0-2.175.757-2.444 1.916C3.936 5.21 3.5 7.43 3.5 9.5a6.5 6.5 0 0 0 2.818 5.358c.468.321.682.713.682 1.032a1 1 0 0 1-.006.1c-.058.49-.305 2.58-.538 4.744C6.226 22.862 6 25.159 6 26a4 4 0 0 0 8 0c0-.84-.227-3.138-.456-5.266c-.233-2.164-.48-4.255-.538-4.745a1 1 0 0 1-.006-.1c0-.318.214-.71.681-1.031A6.5 6.5 0 0 0 16.5 9.5c0-2.071-.435-4.291-.736-5.584C15.495 2.757 14.458 2 13.32 2a2.56 2.56 0 0 0-1.629.582A2.74 2.74 0 0 0 10 2c-.638 0-1.225.217-1.691.582A2.56 2.56 0 0 0 6.68 2m6.07 2.57a.57.57 0 0 1 .57-.57c.26 0 .45.166.496.369c.29 1.249.684 3.292.684 5.131a4.5 4.5 0 0 1-1.952 3.71c-.79.543-1.548 1.473-1.548 2.68q0 .167.02.336c.058.487.304 2.57.536 4.722C11.79 23.135 12 25.295 12 26a2 2 0 1 1-4 0c0-.705.209-2.865.444-5.052c.232-2.152.478-4.235.536-4.722q.02-.17.02-.336c0-1.207-.759-2.137-1.548-2.68A4.5 4.5 0 0 1 5.5 9.5c0-1.84.394-3.882.684-5.131A.49.49 0 0 1 6.68 4a.57.57 0 0 1 .57.57V10a1 1 0 1 0 2 0V4.75a.75.75 0 0 1 1.5 0V10a1 1 0 1 0 2 0zM20 9.5a5.5 5.5 0 0 1 5-5.478V15c0 .279.055.908.127 1.658c.075.777.177 1.758.284 2.792v.003C25.694 22.164 26 25.136 26 26a2 2 0 1 1-4 0c0-.714.212-3.115.448-5.544a635 635 0 0 1 .535-5.244a3 3 0 0 0 .013-.159A1 1 0 0 0 21.997 14H20.5a.5.5 0 0 1-.5-.5zM25.5 2A7.5 7.5 0 0 0 18 9.5v4a2.5 2.5 0 0 0 2.5 2.5h.389a616 616 0 0 0-.431 4.262c-.23 2.37-.458 4.9-.458 5.738a4 4 0 1 0 8 0c0-.985-.317-4.033-.586-6.631l-.013-.122a425 425 0 0 1-.283-2.781C27.04 15.668 27 15.158 27 15V3a1 1 0 0 0-1-1z" />
+                            </svg> Restaurant
+                        </div>
+                        <div
+                            class="md:p-4 md:m-3 mt-1 p-2 text-sm md:text-base flex items-center  hover:bg-red-500 hover:text-white trans bg-white text-black font-light">
+                            <svg class="mx-1 location" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="2em"
+                                viewBox="0 0 24 24">
+                                <path fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.9"
+                                    d="M8.5 10A1.5 1.5 0 0 1 7 8.5a5.5 5.5 0 0 1 11 0V19a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2v-2c0-1.38.71-2.444 1.88-3.175l4.424-2.765C14.359 10.4 15 9.744 15 8.5a2.5 2.5 0 1 0-5 0A1.5 1.5 0 0 1 8.5 10" />
+                            </svg> Hotel
+
+                        </div>
+                        <div
+                            class="md:p-4 md:m-3 mt-1 p-2 text-sm md:text-base flex items-center  hover:bg-red-500 hover:text-white trans bg-white text-black font-light">
+                            <svg class="mx-1 location" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="2em"
+                                viewBox="0 0 24 24">
+                                <g fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5" color="black">
+                                    <path
+                                        d="M7 18c-1.829.412-3 1.044-3 1.754C4 20.994 7.582 22 12 22s8-1.006 8-2.246c0-.71-1.171-1.342-3-1.754m-2.5-9a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0" />
+                                    <path
+                                        d="M13.257 17.494a1.813 1.813 0 0 1-2.514 0c-3.089-2.993-7.228-6.336-5.21-11.19C6.626 3.679 9.246 2 12 2s5.375 1.68 6.467 4.304c2.016 4.847-2.113 8.207-5.21 11.19" />
+                                </g>
+                            </svg> Places
+
+                        </div>
+                        <div
+                            class="md:p-4 md:m-3 mt-1 text-sm md:text-base p-2 flex items-center  hover:bg-red-500 hover:text-white trans bg-white text-black font-light">
+                            <svg class="mx-1" xmlns="http://www.w3.org/2000/svg" width="1.45em" height="2em"
+                                viewBox="0 0 50 50">
+                                <path fill="black"
+                                    d="M25.577 8.938c2.297.169 4.306-1.468 4.488-3.648c.184-2.191-1.53-4.108-3.827-4.277c-2.3-.167-4.309 1.46-4.487 3.651c-.179 2.19 1.536 4.103 3.826 4.274M42.783 41l-1.388-12h-2.252c.021-1 .018-1.111-.051-1.718c-.067-.621-.264-1.075-.585-1.218c.263-.28.438-.636.472-1.037a1.76 1.76 0 0 0-.74-1.575l-5.732-3.768l-4.22-7.946c-.699-1.04-1.883-1.879-3.312-1.999c-1.098-.076-2.108.287-2.925.827l-8.374 6.482a1.66 1.66 0 0 0-.577.865l-1.951 7.851l-.148.233V26h-.016c-.327 0-.625.312-.739.725c-.11.405-.245.94-.245 1.373V29H7.826L6.438 41h5.609l-2.459 3.935c-.16.305-.348.736-.381 1.152c-.121 1.49 1.039 2.785 2.594 2.904c1.111.074 2.067-.462 2.648-1.318L18.599 41h.543l-.085-.737l1.151-1.852c.125-.248.522-.855.566-1.143l1.406-6.11l6.001 6.273l1.884 9.431c.301 1.115 1.263 2.035 2.543 2.129c1.557.118 2.92-.981 3.044-2.468l-.017-.548L34.651 41zM10.957 27.99c.056-.473.233-.742.545-.742l.117-.002c.315.381.783.642 1.323.686a1.9 1.9 0 0 0 1.553-.633a.7.7 0 0 1 .197.326c.083.287.131.616.131.887c0 .162-.008.488-.019.488h-3.876c-.013 0-.009-.643.029-1.01M16.688 29h-1.185c.025-1 .018-1.111-.047-1.718c-.056-.52-.203-.922-.436-1.128l1.479-6.442l2.917-2.257zm21.758 0h-3.879c-.016 0-.011-.643.029-1.01c.052-.473.232-.742.545-.742c.449 0 .856-.014 1.217-.022c.363-.013.858-.031 1.481-.031q.357-.001.491.431c.086.287.132.616.132.887zM25.9 26.717l1.88-7.936l1.581 2.983c.125.205.273.374.468.533L35.476 26h-.853c-.327 0-.447.312-.56.725c-.107.405-.063.94-.063 1.373V29h-2.532l-.409 3.53z" />
+                            </svg> Shopping
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card_grand flex flex-col justify-center items-center ">
+            <div class="cards flex justify-center flex-col items-center md:flex-row">
+                <div
+                    class=" shadow-2xl each_card each1 m-4 bg-white w-11/12 flex flex-col items-center justify-center md:w-auto">
+                    <svg class="m-4" xmlns="http://www.w3.org/2000/svg" width="4em" height="2.5em" viewBox="0 0 24 24">
+                        <path fill="#f85959"
+                            d="m10.155 14.773l-.009-.021a7 7 0 0 1-.402-.123l-.01-.004A7 7 0 0 1 5 8a7 7 0 0 1 13.96-.749c.044.412-.296.749-.71.749s-.745-.338-.8-.748a5.501 5.501 0 1 0-7.279 5.937a2 2 0 0 1 3.829.81c0 .598-.262 1.134-.677 1.5A2 2 0 0 1 12 16a1.99 1.99 0 0 1-1.845-1.227m-2.158.727a8.5 8.5 0 0 1-2.003-1.485a2.25 2.25 0 0 0-1.99 2.234v.578c0 .892.318 1.756.898 2.435c1.566 1.834 3.952 2.74 7.098 2.74s5.533-.906 7.102-2.74a3.75 3.75 0 0 0 .901-2.438v-.575a2.25 2.25 0 0 0-2.248-2.25H15.5c0 .538-.12 1.046-.337 1.5h2.592a.75.75 0 0 1 .748.75v.575a2.25 2.25 0 0 1-.54 1.463c-1.257 1.468-3.224 2.214-5.963 2.214s-4.704-.746-5.957-2.213a2.25 2.25 0 0 1-.54-1.462v-.577a.75.75 0 0 1 .75-.75zM8 8a4 4 0 1 1 6.243 3.313A3.5 3.5 0 0 0 12 10.5a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5c-.854 0-1.636.306-2.242.813A3.99 3.99 0 0 1 8 8" />
+                    </svg>
+                    <h4 class="font-medium text-lg text-black">Best Price Guarantee</h4>
+                    <p class="text-gray-500 text-center text-sm m-3 mb-5">A small river named Duden flows by their
+                        place and supplies.</p>
+                </div>
+                <div
+                    class=" shadow-2xl each_card m-4 bg-white w-11/12 flex flex-col items-center justify-center md:w-auto">
+                    <svg class="m-4" xmlns="http://www.w3.org/2000/svg" width="4em" height="2.5em" viewBox="0 0 24 24">
+                        <path fill="#f85959"
+                            d="m10.155 14.773l-.009-.021a7 7 0 0 1-.402-.123l-.01-.004A7 7 0 0 1 5 8a7 7 0 0 1 13.96-.749c.044.412-.296.749-.71.749s-.745-.338-.8-.748a5.501 5.501 0 1 0-7.279 5.937a2 2 0 0 1 3.829.81c0 .598-.262 1.134-.677 1.5A2 2 0 0 1 12 16a1.99 1.99 0 0 1-1.845-1.227m-2.158.727a8.5 8.5 0 0 1-2.003-1.485a2.25 2.25 0 0 0-1.99 2.234v.578c0 .892.318 1.756.898 2.435c1.566 1.834 3.952 2.74 7.098 2.74s5.533-.906 7.102-2.74a3.75 3.75 0 0 0 .901-2.438v-.575a2.25 2.25 0 0 0-2.248-2.25H15.5c0 .538-.12 1.046-.337 1.5h2.592a.75.75 0 0 1 .748.75v.575a2.25 2.25 0 0 1-.54 1.463c-1.257 1.468-3.224 2.214-5.963 2.214s-4.704-.746-5.957-2.213a2.25 2.25 0 0 1-.54-1.462v-.577a.75.75 0 0 1 .75-.75zM8 8a4 4 0 1 1 6.243 3.313A3.5 3.5 0 0 0 12 10.5a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5c-.854 0-1.636.306-2.242.813A3.99 3.99 0 0 1 8 8" />
+                    </svg>
+                    <h4 class="font-medium text-lg text-black">Best Price Guarantee</h4>
+                    <p class="text-gray-500 text-center text-sm m-3 mb-5">A small river named Duden flows by their
+                        place and supplies.</p>
+                </div>
+                <div
+                    class=" shadow-2xl each_card m-4 bg-white w-11/12 flex flex-col items-center justify-center md:w-auto">
+                    <svg class="m-4" xmlns="http://www.w3.org/2000/svg" width="4em" height="2.5em" viewBox="0 0 24 24">
+                        <path fill="#f85959"
+                            d="m10.155 14.773l-.009-.021a7 7 0 0 1-.402-.123l-.01-.004A7 7 0 0 1 5 8a7 7 0 0 1 13.96-.749c.044.412-.296.749-.71.749s-.745-.338-.8-.748a5.501 5.501 0 1 0-7.279 5.937a2 2 0 0 1 3.829.81c0 .598-.262 1.134-.677 1.5A2 2 0 0 1 12 16a1.99 1.99 0 0 1-1.845-1.227m-2.158.727a8.5 8.5 0 0 1-2.003-1.485a2.25 2.25 0 0 0-1.99 2.234v.578c0 .892.318 1.756.898 2.435c1.566 1.834 3.952 2.74 7.098 2.74s5.533-.906 7.102-2.74a3.75 3.75 0 0 0 .901-2.438v-.575a2.25 2.25 0 0 0-2.248-2.25H15.5c0 .538-.12 1.046-.337 1.5h2.592a.75.75 0 0 1 .748.75v.575a2.25 2.25 0 0 1-.54 1.463c-1.257 1.468-3.224 2.214-5.963 2.214s-4.704-.746-5.957-2.213a2.25 2.25 0 0 1-.54-1.462v-.577a.75.75 0 0 1 .75-.75zM8 8a4 4 0 1 1 6.243 3.313A3.5 3.5 0 0 0 12 10.5a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5c-.854 0-1.636.306-2.242.813A3.99 3.99 0 0 1 8 8" />
+                    </svg>
+                    <h4 class="font-medium text-lg text-black">Best Price Guarantee</h4>
+                    <p class="text-gray-500 text-center text-sm m-3 mb-5">A small river named Duden flows by their
+                        place and supplies.</p>
+                </div>
+                <div
+                    class=" shadow-2xl each_card m-4 bg-white w-11/12 flex flex-col items-center justify-center md:w-auto">
+                    <svg class="m-4" xmlns="http://www.w3.org/2000/svg" width="4em" height="2.5em" viewBox="0 0 24 24">
+                        <path fill="#f85959"
+                            d="m10.155 14.773l-.009-.021a7 7 0 0 1-.402-.123l-.01-.004A7 7 0 0 1 5 8a7 7 0 0 1 13.96-.749c.044.412-.296.749-.71.749s-.745-.338-.8-.748a5.501 5.501 0 1 0-7.279 5.937a2 2 0 0 1 3.829.81c0 .598-.262 1.134-.677 1.5A2 2 0 0 1 12 16a1.99 1.99 0 0 1-1.845-1.227m-2.158.727a8.5 8.5 0 0 1-2.003-1.485a2.25 2.25 0 0 0-1.99 2.234v.578c0 .892.318 1.756.898 2.435c1.566 1.834 3.952 2.74 7.098 2.74s5.533-.906 7.102-2.74a3.75 3.75 0 0 0 .901-2.438v-.575a2.25 2.25 0 0 0-2.248-2.25H15.5c0 .538-.12 1.046-.337 1.5h2.592a.75.75 0 0 1 .748.75v.575a2.25 2.25 0 0 1-.54 1.463c-1.257 1.468-3.224 2.214-5.963 2.214s-4.704-.746-5.957-2.213a2.25 2.25 0 0 1-.54-1.462v-.577a.75.75 0 0 1 .75-.75zM8 8a4 4 0 1 1 6.243 3.313A3.5 3.5 0 0 0 12 10.5a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5c-.854 0-1.636.306-2.242.813A3.99 3.99 0 0 1 8 8" />
+                    </svg>
+                    <h4 class="font-medium text-lg text-black">Best Price Guarantee</h4>
+                    <p class="text-gray-500 text-center text-sm m-3 mb-5">A small river named Duden flows by their
+                        place and supplies.</p>
+                </div>
+
+            </div>
+            <div class="h-44"></div>
+        </div>
+
+        <div class="flex flex-col justify-center items-center bg-white">
+            <div class="featured">
+                <div class="f_title">
+                    <h1 class="text-gray-500 my-2">Featured</h1>
+                    <h1 class="text-2xl"><span class="font-bold">Featured</span> Destination</h1>
+                </div>
+                <div class="container p-2 flex justify-center items-center">
+                    <i class="ri-arrow-left-s-line text-4xl text-red-500" id="previous_slide"></i>
+                    <div class="slider flex my-20">
+                        <div class="each_box each1 border m-6">
+                            <img class="h-52 md:80 w-64 " src="assets/images/asset 1.jpeg" alt="">
+                            <div class="m-3"></div>
+                            <div class="text-gray-600 listing1 m-3 font-light">3 Listing</div>
+                        </div>
+                        <div class="hidden sm:block each_box each2 border m-6">
+                            <img class="h-52 md:80 w-64" src="assets/images/asset 2.jpeg" alt="">
+                            <div class="m-3"></div>
+                            <div class="text-gray-600 listing2 m-3 font-light">3 Listing</div>
+                        </div>
+                        <div class=" hidden md:block each_box each3 border m-6">
+                            <img class="h-52 md:80 w-64" src="assets/images/asset 3.jpeg" alt="">
+                            <div class="m-3"></div>
+                            <div class="text-gray-600 m-3 listing3 font-light">3 Listing</div>
+                        </div>
+                        <div class="hidden lg:block each_box each4 border m-6">
+                            <img class="h-52 md:80 w-64" src="assets/images/asset 4.jpeg" alt="">
+                            <div class="m-3"></div>
+                            <div class="text-gray-600 m-3 listing4 font-light">3 Listing</div>
+                        </div>
+
+                    </div>
+                    <i class="ri-arrow-right-s-line text-4xl text-red-500" id="next_slide"></i>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="nums text-white relative">
+            <div class="num_bg h-full w-full absolute"></div>
+            <div class="p-11 flex flex-col items-center justify-center xx">
+                <h1 class="text-4xl m-4">Some Fun Facts</h1>
+                <p class="m-5">More than 100,000</p>
+
+                <div class=" m-5 n_reviews flex flex-wrap">
+                    <div class="text-md m-10">
+                        <div class="my-2">100,000</div>
+                        <div>Happy<br> Customers</div>
+                    </div>
+                    <div class="text-md m-10">
+                        <div class="my-2">40,000</div>
+                        <div>Destination<br> Places</div>
+                    </div>
+                    <div class="text-md m-10">
+                        <div class="my-2">87,000</div>
+                        <div>Hotels</div>
+                    </div>
+                    <div class="text-md m-10">
+                        <div class="my-2">56,400</div>
+                        <div>Restaurant</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex flex-col justify-center items-center bg-white my-16">
+            <div>
+                <div class="flex items-center justify-center">
+                    <div class="hotels ">
+                        <h1 class="text-gray-500 my-2">Special Offers</h1>
+                        <h1 class="text-2xl"><span class="font-bold">Popular</span> Hotels & Rooms</h1>
+                    </div>
+                </div>
+                <div
+                    class="xl:gap-10 lg:gap-6 md:gap-4 sm:gap-2 gap flex flex-wrap justify-center items-center flex-wrap border-black my-28">
+                    <div class="w-64 border border-inherit each_card m-1">
+                        <img class="w-64 h-48" src="assets/images/asset 7.jpeg" alt="">
+                        <div class="p-2 flex justify-between">
+                            <div>Hotel, Italy</div>
+                            <div class="text-blue-600">$40</div>
+                        </div>
+                        <div class="p-2 flex justify-between">
+                            <div>
+                                <i class="text-red-500 ri-star-s-fill"></i>
+                                <i class="text-red-500 ri-star-s-fill"></i>
+                                <i class="text-red-500 ri-star-s-fill"></i>
+                                <i class="text-red-500 ri-star-s-fill"></i>
+                                <i class="ri-star-s-line text-red-500"></i> <span class="text-sm text-gray-500">40
+                                    Rating</span>
+                            </div>
+                            <div class="text-blue-600">/night</div>
+                        </div>
+                        <p class="m-3 pb-3 border-b border-inherit">Far far away, behind the word mountains, far from
+                            the
+                            countries</p>
+                        <div class="flex p-2 justify-between items-center">
+                            <div class="text-gray-500">
+                                <i class="ri-map-2-line"></i> Miami, Fi
+                            </div>
+                            <button class="trans hover:bg-green-600 text-white bg-green-500 rounded p-2">Book
+                                Now</button>
+                        </div>
+                    </div>
+                    <div class="w-64 border border-inherit each_card m-1">
+                        <img class="w-64 h-48" src="assets/images/asset 8.jpeg" alt="">
+                        <div class="p-2 flex justify-between">
+                            <div>Hotel, Italy</div>
+                            <div class="text-blue-600">$20</div>
+                        </div>
+                        <div class="p-2 flex justify-between">
+                            <div>
+                                <i class="text-red-500 ri-star-s-fill"></i>
+                                <i class="text-red-500 ri-star-s-fill"></i>
+                                <i class="text-red-500 ri-star-s-fill"></i>
+                                <i class="text-red-500 ri-star-s-fill"></i>
+                                <i class="ri-star-s-line text-red-500"></i> <span class="text-sm text-gray-500">8
+                                    Rating</span>
+                            </div>
+                            <div class="text-blue-600">/night</div>
+                        </div>
+                        <p class="m-3 pb-3 border-b border-inherit">Far far away, behind the word mountains, far from
+                            the
+                            countries</p>
+                        <div class="flex p-2 justify-between items-center">
+                            <div class="text-gray-500">
+                                <i class="ri-map-2-line"></i> Miami, Fi
+                            </div>
+                            <button class="trans hover:bg-green-600 text-white bg-green-500 rounded p-2">Book
+                                Now</button>
+                        </div>
+                    </div>
+                    <div class="w-64 border border-inherit each_card m-1">
+                        <img class="w-64 h-48" src="assets/images/asset 9.jpeg" alt="">
+                        <div class="p-2 flex justify-between">
+                            <div>Hotel, London</div>
+                            <div class="text-blue-600">$40</div>
+                        </div>
+                        <div class="p-2 flex justify-between">
+                            <div>
+                                <i class="text-red-500 ri-star-s-fill"></i>
+                                <i class="text-red-500 ri-star-s-fill"></i>
+                                <i class="text-red-500 ri-star-s-fill"></i>
+                                <i class="text-red-500 ri-star-s-fill"></i>
+                                <i class="ri-star-s-line text-red-500"></i> <span class="text-sm text-gray-500">8
+                                    Rating</span>
+                            </div>
+                            <div class="text-blue-600">/night</div>
+                        </div>
+                        <p class="m-3 pb-3 border-b border-inherit">Far far away, behind the word mountains, far from
+                            the
+                            countries</p>
+                        <div class="flex p-2 justify-between items-center">
+                            <div class="text-gray-500">
+                                <i class="ri-map-2-line"></i> Miami, Fi
+                            </div>
+                            <button class="trans hover:bg-green-600 text-white bg-green-500 rounded p-2">Book
+                                Now</button>
+                        </div>
+                    </div>
+                    <div class="w-64 border border-inherit each_card m-1">
+                        <img class="w-64 h-48" src="assets/images/asset 10.jpeg" alt="">
+                        <div class="p-2 flex justify-between">
+                            <div>Hotel, Paris</div>
+                            <div class="text-blue-600">$80</div>
+                        </div>
+                        <div class="p-2 flex justify-between">
+                            <div>
+                                <i class="text-red-500 ri-star-s-fill"></i>
+                                <i class="text-red-500 ri-star-s-fill"></i>
+                                <i class="text-red-500 ri-star-s-fill"></i>
+                                <i class="text-red-500 ri-star-s-fill"></i>
+                                <i class="text-red-500 ri-star-s-fill"></i> <span class="text-sm text-gray-500">99
+                                    Rating</span>
+                            </div>
+                            <div class="text-blue-600">/night</div>
+                        </div>
+                        <p class="m-3 pb-3 border-b border-inherit">Far far away, behind the word mountains, far from
+                            the
+                            countries</p>
+                        <div class="flex p-2 justify-between items-center">
+                            <div class="text-gray-500">
+                                <i class="ri-map-2-line"></i> Miami, Fi
+                            </div>
+                            <button class="trans hover:bg-green-600 text-white bg-green-500 rounded p-2">Book
+                                Now</button>
+                        </div>
+                    </div>
+                    <div class="w-64 border border-inherit each_card m-1">
+                        <img class="w-64 h-48" src="assets/images/asset 11.jpeg" alt="">
+                        <div class="p-2 flex justify-between">
+                            <div>Hotel, Italy</div>
+                            <div class="text-blue-600">$40</div>
+                        </div>
+                        <div class="p-2 flex justify-between">
+                            <div>
+                                <i class="text-red-500 ri-star-s-fill"></i>
+                                <i class="text-red-500 ri-star-s-fill"></i>
+                                <i class="ri-star-s-line text-red-500"></i>
+                                <i class="ri-star-s-line text-red-500"></i>
+                                <i class="ri-star-s-line text-red-500"></i> <span class="text-sm text-gray-500">8
+                                    Rating</span>
+                            </div>
+                            <div class="text-blue-600">/night</div>
+                        </div>
+                        <p class="m-3 pb-3 border-b border-inherit">Far far away, behind the word mountains, far from
+                            the
+                            countries</p>
+                        <div class="flex p-2 justify-between items-center">
+                            <div class="text-gray-500">
+                                <i class="ri-map-2-line"></i> Miami, Fi
+                            </div>
+                            <button class="trans hover:bg-green-600 text-white bg-green-500 rounded p-2">Book
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap lg:flex-nowrap items-center justify-center my-10" style="background-color: #f8faff;">
+            <div class="sm:w-2/5 m-5 p-2">
+                <h1 class="text-gray-500 my-3">Best Direcotry Website</h1>
+                <h1 class="text-2xl"><span class="font-bold">Why</span> Choose Us?</h1>
+                <div class="my-10">
+                    <p class="my-4 text-gray-500">Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia,<br>
+                        there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the<br>
+                        Semantics, a large language ocean.</p>
+                    <p class="my-2 text-gray-500">Even the all-powerful Pointing has no control about the blind
+                        texts it is<br> an almost unorthographic life.</p>
+
+                    <button
+                        class="my-3 border-red-500 text-red-500 p-4 border hover:bg-red-500 hover:text-white rounded-full">Read
+                        more</button>
+                </div>
+            </div>
+
+            <div class="w-2/5 my-5 sm:m-5">
+                <h1 class="text-gray-500 my-3">Testimony</h1>
+                <h1 class="text-xl sm:text-2xl"><span class="font-bold">Our</span> Guests Says</h1>
+                <div class="flex w-5/6 justify-center items-center">
+                    <i class="btns ri-arrow-left-s-line text-2xl sm:text-4xl text-red-500" id="previous_comment"></i>
+                    <div class="complete_comm bg-white m-1 sm:m-10 p-3 w-5/6">
+                        <div class=" comm flex  justify-between m-1 my-4 sm:m-4 w-5/6">
+                            <img class="rounded-full h-20 w-20 sm:w-auto m-1" src="assets/images/asset 12.jpeg" alt="">
+                            <div class=" m-auto sm:m-5 mx-10">
+                                <p class="text-sm comment">Far far away, behind the word mountains, far from the
+                                    countries
+                                    Vokalia and Consonantia, there live the blind texts.</p>
+
+                                <div class="my-3 flex flex-col justify-center">
+                                    <div class="font-bold com_name"> Dennis Green</div>
+                                    <div class="com_place text-gray-500 my-2"> Guest from Itlay</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="btns ri-arrow-right-s-line text-2xl sm:text-4xl text-red-500" id="next_comment"></i>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="flex my-10 flex-col justify-center items-center bg-white">
+            <div>
+                <div class="m-4">
+                    <h1 class="text-gray-500 my-2">Special Offers</h1>
+                    <h1 class="text-2xl"><span class="font-bold">Popular</span> Restaurants</h1>
+                </div>
+                <div class="container my-24 flex-wrap flex justify-center items-center">
+                    <div class="w-64 border border-inherit each_card m-4">
+                        <img class="w-64 h-52" src="assets/images/asset 15.jpeg" alt="">
+                        <div class="m-2">Hotel, Italy</div>
+                        <div class="m-2">
+                            <i class="text-red-500 ri-star-s-fill"></i>
+                            <i class="text-red-500 ri-star-s-fill"></i>
+                            <i class="text-red-500 ri-star-s-fill"></i>
+                            <i class="text-red-500 ri-star-s-fill"></i>
+                            <i class="ri-star-s-line text-red-500"></i>
+                            <span class="text-xs font-light text-gray-500">40 Rating</span>
+                        </div>
+                        <p class="m-3 pb-3 border-b border-inherit text-gray-500 text-sm font-light">Far far away,
+                            behind
+                            the word mountains, far from the
+                            countries</p>
+                        <div class="flex p-2 justify-between items-center">
+                            <div class="text-gray-500  text-sm">
+                                <i class="ri-map-2-line"></i> San Franciso, CA
+                            </div>
+                            <button
+                                class="trans  hover:bg-green-600 text-white bg-green-500 text-sm rounded p-1">Discover</button>
+                        </div>
+                    </div>
+                    <div class="w-64 border border-inherit each_card m-4">
+                        <img class="w-64 h-52" src="assets/images/asset 16.jpeg" alt="">
+                        <div class="m-2">Hotel, Italy</div>
+                        <div class="m-2">
+                            <i class="text-red-500 ri-star-s-fill"></i>
+                            <i class="text-red-500 ri-star-s-fill"></i>
+                            <i class="text-red-500 ri-star-s-fill"></i>
+                            <i class="text-red-500 ri-star-s-fill"></i>
+                            <i class="ri-star-s-line text-red-500"></i>
+                            <span class="text-xs font-light text-gray-500">40 Rating</span>
+                        </div>
+                        <p class="m-3 pb-3 border-b border-inherit text-gray-500 text-sm font-light">Far far away,
+                            behind
+                            the word mountains, far from the
+                            countries</p>
+                        <div class="flex p-2 justify-between items-center">
+                            <div class="text-gray-500  text-sm">
+                                <i class="ri-map-2-line"></i> San Franciso, CA
+                            </div>
+                            <button
+                                class="trans  hover:bg-green-600 text-white bg-green-500 text-sm rounded p-1">Discover</button>
+                        </div>
+                    </div>
+                    <div class="w-64 border border-inherit each_card m-4">
+                        <img class="w-64 h-52" src="assets/images/asset 17.jpeg" alt="">
+                        <div class="m-2">Hotel, Italy</div>
+                        <div class="m-2">
+                            <i class="text-red-500 ri-star-s-fill"></i>
+                            <i class="text-red-500 ri-star-s-fill"></i>
+                            <i class="text-red-500 ri-star-s-fill"></i>
+                            <i class="text-red-500 ri-star-s-fill"></i>
+                            <i class="ri-star-s-line text-red-500"></i>
+                            <span class="text-xs font-light text-gray-500">40 Rating</span>
+                        </div>
+                        <p class="m-3 pb-3 border-b border-inherit text-gray-500 text-sm font-light">Far far away,
+                            behind
+                            the word mountains, far from the
+                            countries</p>
+                        <div class="flex p-2 justify-between items-center">
+                            <div class="text-gray-500  text-sm">
+                                <i class="ri-map-2-line"></i> San Franciso, CA
+                            </div>
+                            <button
+                                class="trans  hover:bg-green-600 text-white bg-green-500 text-sm rounded p-1">Discover</button>
+                        </div>
+                    </div>
+                    <div class="w-64 border border-inherit each_card m-4">
+                        <img class="w-64 h-52" src="assets/images/asset 18.jpeg" alt="">
+                        <div class="m-2">Hotel, Italy</div>
+                        <div class="m-2">
+                            <i class="text-red-500 ri-star-s-fill"></i>
+                            <i class="text-red-500 ri-star-s-fill"></i>
+                            <i class="text-red-500 ri-star-s-fill"></i>
+                            <i class="text-red-500 ri-star-s-fill"></i>
+                            <i class="ri-star-s-line text-red-500"></i>
+                            <span class="text-xs font-light text-gray-500">40 Rating</span>
+                        </div>
+                        <p class="m-3 pb-3 border-b border-inherit text-gray-500 text-sm font-light">Far far away,
+                            behind
+                            the word mountains, far from the
+                            countries</p>
+                        <div class="flex p-2 justify-between items-center">
+                            <div class="text-gray-500  text-sm">
+                                <i class="ri-map-2-line"></i> San Franciso, CA
+                            </div>
+                            <button
+                                class="trans  hover:bg-green-600 text-white bg-green-500 text-sm rounded p-1">Discover</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="flex  my-10 flex-col justify-center items-center bg-white" style="background-color: #f8faff;">
+            <div>
+                <div class="m-20">
+                    <h1 class="text-gray-500 my-2">Recent Blog</h1>
+                    <h1 class="text-2xl"><span class="font-bold">Tips</span> & Articles</h1>
+                </div>
+                <div class="container sm:m-2 sm:m-8 my-24 flex-wrap flex justify-center items-center">
+                    <div class="w-72 border border-inherit each_card m-4">
+                        <img class="w-72 h-64" src="assets/images/asset 19.jpeg" alt="">
+                        <div class="m-4 text-gray-300 ">Tips, Travel</div>
+                        <p class="m-4">8 Best homestay in Philippines that you dont't miss out</p>
+                        <div class="mx-4 text-gray-400 text-sm">
+                            August 12, 2018 Admin
+                        </div>
+                        <div class="mx-4 mb-10 py-2 text-gray-400 text-sm">
+                            <i class="ri-chat-4-fill"></i> 3
+                        </div>
+                    </div>
+                    <div class="w-72 border border-inherit each_card m-4">
+                        <img class="w-72 h-64" src="assets/images/asset 20.jpeg" alt="">
+                        <div class="m-4 text-gray-300 ">Tips, Travel</div>
+                        <p class="m-4">8 Best homestay in Philippines that you dont't miss out</p>
+                        <div class="mx-4 text-gray-400 text-sm">
+                            August 12, 2018 Admin
+                        </div>
+                        <div class="mx-4 mb-10 py-2 text-gray-400 text-sm">
+                            <i class="ri-chat-4-fill"></i> 3
+                        </div>
+                    </div>
+                    <div class="w-72 border border-inherit each_card m-4">
+                        <img class="w-72 h-64" src="assets/images/asset 21.jpeg" alt="">
+                        <div class="m-4 text-gray-300 ">Tips, Travel</div>
+                        <p class="m-4">8 Best homestay in Philippines that you dont't miss out</p>
+                        <div class="mx-4 text-gray-400 text-sm">
+                            August 12, 2018 Admin
+                        </div>
+                        <div class="mx-4 mb-10 py-2 text-gray-400 text-sm">
+                            <i class="ri-chat-4-fill"></i> 3
+                        </div>
+                    </div>
+                    <div class="w-72 border border-inherit each_card m-4">
+                        <img class="w-72 h-64" src="assets/images/asset 22.jpeg" alt="">
+                        <div class="m-4 text-gray-300 ">Tips, Travel</div>
+                        <p class="m-4">8 Best homestay in Philippines that you dont't miss out</p>
+                        <div class="mx-4 text-gray-400 text-sm">
+                            August 12, 2018 Admin
+                        </div>
+                        <div class="mx-4 mb-10 py-2 text-gray-400 text-sm">
+                            <i class="ri-chat-4-fill"></i> 3
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="sub_footer text-white flex justify-center items-center">
+            <div class="sm:m-4 lg:m-20 w-11/12  sm:flex justify-center items-center flex-col">
+                <h1 class="my-4 sm:m-4 lg:m-10 text-4xl">Subscribe to our Newsletter</h1>
+                <p class="text-sm text-center" style="color: #c8f1eb;">Far far away, behind the word mountains, far from
+                    the
+                    countries Vokalia and Consonantia,<br> there live the
+                    blind texts. Separated they live in.</p>
+                <div class="sm:m-4 lg:m-10 flex flex-wrap sm:flex-nowrap">
+                    <input type="text" class="border-white border m-1 p-4 lg:w-80" placeholder="Enter email address">
+                    <button class="border-white border m-1 p-4 cursor">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="hidden lg:flex justify-center items-cemter" style="background-color: #222831;">
+            <div class="flex text-white gap-20 m-24">
+                <div>
+                    <div class="text-lg font-bold">dirEngine.</div>
+                    <p class="text-gray-400 text-sm my-4">Fara far away, behind the word<br> mountains, far from the<br>
+                        countries Vokalia and
+                        <br>Consonantia,there live the<br> blind texts.
+                    </p>
+                    <div class="my-8">
+                        <i class="rounded-full p-2 m-2 text-2xl ri-twitter-fill"></i>
+                        <i class="rounded-full p-2 m-2 text-2xl ri-facebook-fill"></i>
+                        <i class="rounded-full p-2 m-2 text-2xl ri-instagram-line"></i>
+                    </div>
+                </div>
+                <div>
+                    <div>Information</div>
+                    <ul class="text-gray-400 list-none">
+                        <li class="my-2">About</li>
+                        <li class="my-2">Service/li>
+                        <li class="my-2">Terms and Conditions</li>
+                        <li class="my-2">Become a partner</li>
+                        <li class="my-2">Best Price Guarantee</li>
+                        <li class="my-2">Privacy and Policy</li>
+                    </ul>
+                </div>
+                <div>
+                    <div>Customer Support</div>
+                    <ul class="text-gray-400 list-none">
+                        <li class="my-2">FAQ</li>
+                        <li class="my-2">Payment Option</li>
+                        <li class="my-2">Booking Tips</li>
+                        <li class="my-2">How it works</li>
+                        <li class="my-2">Contact Us</li>
+                    </ul>
+                </div>
+                <div>
+                    <div>Have a Questions?</div>
+                    <ul class="text-gray-400 list-none">
+                        <li class="my-2"><i class="m-1 ri-map-pin-2-fill"></i> Panipat, India</li>
+                        <li class="my-2"><i class="m-1 ri-phone-fill"></i>+91 70158 995XX</li>
+                        <li class="my-2"><i class="m-1 ri-mail-fill"></i>kanaksehrawat456@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
+        <footer class="p-4 bg-black text-white text-center">
+            Copyright &copy 2024 All rights reserved | This template is made by Kanak Sehrawat.
+        </footer>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
