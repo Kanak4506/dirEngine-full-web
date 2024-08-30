@@ -16,10 +16,14 @@ body::-webkit-scrollbar{
     height: 64.8vh;
 }
 
-.nav,
-.what {
-    width: 65%;
+
+@media screen and (min-width: 1439px) {
+    .nav,
+    .what {
+        width: 65%;
+    }
 }
+
 
 .active {
     background-color: #78d5ef;

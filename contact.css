@@ -1,10 +1,16 @@
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 }
 
-.nav{
-    width: 65%;
+
+@media screen and (min-width: 1439px) {
+    .nav {
+        width: 65%;
+    }
 }
+
+
+
 .hero_bg {
     background-image: url('assets/images/bg_2.jpg');
     z-index: -1;
@@ -22,6 +28,6 @@ body::-webkit-scrollbar{
     transition: all 0.3 ease;
 }
 
-.logo{
+.logo {
     font-family: "poppins";
 }

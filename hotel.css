@@ -10,10 +10,11 @@ body::-webkit-scrollbar {
     background-size: cover;
 }
 
-.nav {
-    width: 60%;
+@media screen and (min-width: 1439px) {
+    .nav {
+        width: 65%;
+    }
 }
-
 .move, .moves {
     background-color: #3fa981;
     font-family: cursive;
