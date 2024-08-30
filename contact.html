@@ -4,70 +4,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DirEngine.|Contact Us</title>
-    <link rel="stylesheet" href="contact.css">  
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Fredoka:wght@300..700&family=Gothic+A1:wght@300;400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mukta:wght@200;300;400;500;600;700;800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yatra+One&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <div class="main flex flex-col items-center">
-            <div class="nav my-2 hidden lg:text-4 md:flex justify-between items-center p-3 text-black">
-                <div class="logo text-xl font-extrabold">dirEngine.</div>
+    <div class="main_container  select-none m-0 p-0 box-border">
+        <div class="nav_bar md:hidden p-4 bg-black flex items-center justify-between">
+            <div class="logo text-lg text-white font-bold">dirEngine.</div>
+            <div class="right_items flex items-center text-gray-500" id="menu_btn">
+                <img src="assets/icons/menu.svg"> MENU
+            </div>
+        </div>
+        <div class="menu_drop hidden text-white p-2 list-none bg-black">
+            <li class="trans p-5 hover:text-gray-400 ">Home</li>
+            <li class="trans p-5 hover:text-gray-400 ">About</li>
+            <li class="trans p-5 hover:text-gray-400 ">Tour</li>
+            <li class="trans p-5 hover:text-gray-400 ">Hotels</li>
+            <li class="trans p-5 hover:text-gray-400 ">Blog</li>
+            <li class="trans p-5 hover:text-gray-400 ">Contact</li>
+            <li> <button class=" trans w-full flex border rounded-full p-4 hover:bg-red-500 hover:border-red-500">Add
+                    listing</button></li>
+        </div>
+
+        <div class="hero_section h-screen w-screen flex flex-col items-center relative text-white">
+            <div class="hero_bg absolute h-screen w-screen"></div>
+            <div class="nav hidden md:flex justify-between items-center w-full p-3">
+                <div class="logo text-xl font-bold">dirEngine.</div>
                 <div class="right_items md:text-sm list-none flex items-center">
-                    <li class="trans p-5 text-lg hover:text-gray-400 cursor-pointer "><a href="index.html">Home</a>
-                    </li>
-                    <li class="trans p-5 text-lg hover:text-gray-400 cursor-pointer"><a href="about.html">About</a>
-                    </li>
-                    <li class="trans p-5 text-lg hover:text-gray-400 cursor-pointer"><a href="tour.html">Tour</a>
-                    </li>
-                    <li class="trans p-5 text-lg hover:text-gray-400 cursor-pointer"><a href="hotel.html">Hotels</a>
-                    </li>
-                    <li class="trans p-5 text-lg hover:text-gray-400 cursor-pointer"><a href="blog.html">Blog</a>
-                    </li>
-                    <li class="trans p-5 text-lg hover:text-gray-400 cursor-pointer"><a href="contact.html">Contact</a>
-                    </li>
+                    <li class="trans p-5 hover:text-gray-400 cursor-pointer "><a href="index.html">Home</a></li>
+                    <li class="trans p-5 hover:text-gray-400 cursor-pointer"><a href="about.html">About</a></li>
+                    <li class="trans p-5 hover:text-gray-400 cursor-pointer"><a href="tour.html">Tour</a></li>
+                    <li class="trans p-5 hover:text-gray-400 cursor-pointer"><a href="hotel.html">Hotels</a></li>
+                    <li class="trans p-5 hover:text-gray-400 cursor-pointer"><a href="blog.html">Blog</a></li>
+                    <li class="trans p-5 hover:text-gray-400 cursor-pointer"><a href="contact.html">Contact</a></li>
                     <button
-                        class=" trans md:rounded-3xl border lg:rounded-full p-4 hover:bg-red-500 hover:border-red-500">Add
+                        class=" trans md:rounded-3xl border lg:rounded-full p-4 hover:text-white hover:bg-red-500 hover:border-red-500">Add
                         listing</button>
                 </div>
             </div>
         </div>
-        <h1>Registration</h1>
-        <form action="home.html" onsubmit="return formValidation()" method="post">
 
-            <div class="form_item" id="firstname">
-                First Name: <br><input type="text" id="f_first_name" required><br>
-                <b><span class="form_error fname"></span></b>
+        <div class="flex flex-col md:flex-row items-center justify-center">
+            <div class="form_submission flex flex-col justify-center items-center m-2 p-10 ">
+                <h1 class="text-4xl font-semibold">Registration</h1>
+                <div class="form_details" style="font-family: 'Poppins';">
+                    <div class="each_detail m-4">
+                        <div class="title text-lg">First Name: </div>
+                        <input type="text" class="outline-none py-1 px-4 my-2 border border-gray-500 w-80"
+                            id="first_name" required>
+                            
+                    </div>
+                    <div class="each_detail m-4">
+                        <div class="title text-lg">Last Name:</div>
+                        <input type="text" class="outline-none py-1 px-4 my-2 border border-gray-500 w-80"
+                            id="first_name" required>
+                    </div>
+                    <div class="each_detail m-4">
+                        <div class="title text-lg">E-mail:</div>
+                        <input type="email" class="outline-none py-1 px-4 my-2 border border-gray-500 w-80" id="email"
+                            required>
+                    </div>
+                    <div class="each_detail m-4">
+                        <div class="title text-lg">Telephone:</div>
+                        <input type="tel" class="outline-none py-1 px-4 my-2 border border-gray-500 w-80" id="phone"
+                            required>
+                    </div>
+                    <div class="each_detail m-4">
+                        <div class="title text-lg">Password:</div>
+                        <input type="password" class="outline-none py-1 px-4 my-2 border border-gray-500 w-80"
+                            id="password" required>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button
+                            class="trans border rounded-2xl bg-red-500 text-white p-4 hover:border-red-500">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="m-10">
+                <div class="flex items-center justify-between">
+                    <div class="logo text-lg font-bold">dirEngine.</div>
+                    <button
+                        class="trans logo border rounded-2xl bg-red-500 text-white p-3 hover:border-red-500"><a href="index.html">More info</a></button>
+                </div>
+                <div> Feel free to Contact Us </div>
+                <img class="h-80" src="https://i.ytimg.com/vi/FLVooMrRLmw/maxresdefault.jpg" alt="">
+
+                <div>Contact Information:- kanaksehrawat456@gmail.com</div>
+                <div class="font-medium my-2">Share this to everyone...</div>
+            </div>
+        </div>
+
+        <footer class="hidden lg:flex justify-center items-cemter" style="background-color: #222831;">
+            <div class="flex text-white gap-20 m-24">
+                <div>
+                    <div class="text-lg font-bold">dirEngine.</div>
+                    <p class="text-gray-400 text-sm my-4">Fara far away, behind the word<br> mountains, far from the<br>
+                        countries Vokalia and
+                        <br>Consonantia,there live the<br> blind texts.
+                    </p>
+                    <div class="my-8">
+                        <i class="rounded-full p-2 m-2 text-2xl ri-twitter-fill"></i>
+                        <i class="rounded-full p-2 m-2 text-2xl ri-facebook-fill"></i>
+                        <i class="rounded-full p-2 m-2 text-2xl ri-instagram-line"></i>
+                    </div>
+                </div>
+                <div>
+                    <div>Information</div>
+                    <ul class="text-gray-400 list-none">
+                        <li class="my-2">About</li>
+                        <li class="my-2">Service/li>
+                        <li class="my-2">Terms and Conditions</li>
+                        <li class="my-2">Become a partner</li>
+                        <li class="my-2">Best Price Guarantee</li>
+                        <li class="my-2">Privacy and Policy</li>
+                    </ul>
+                </div>
+                <div>
+                    <div>Customer Support</div>
+                    <ul class="text-gray-400 list-none">
+                        <li class="my-2">FAQ</li>
+                        <li class="my-2">Payment Option</li>
+                        <li class="my-2">Booking Tips</li>
+                        <li class="my-2">How it works</li>
+                        <li class="my-2">Contact Us</li>
+                    </ul>
+                </div>
+                <div>
+                    <div>Have a Questions?</div>
+                    <ul class="text-gray-400 list-none">
+                        <li class="my-2"><i class="m-1 ri-map-pin-2-fill"></i> Panipat, India</li>
+                        <li class="my-2"><i class="m-1 ri-phone-fill"></i>+91 70158 995XX</li>
+                        <li class="my-2"><i class="m-1 ri-mail-fill"></i>kanaksehrawat456@gmail.com</li>
+                    </ul>
+                </div>
             </div>
 
-
-            <div class="form_item" id="lastname">
-                Last Name: <br><input type="text" id="f_last_name" required><br>
-                <b><span class="form_error flast"></span></b>
-            </div>
-
-            <div class="form_item" id="email">
-                E-mail: <br><input type="email" id="f_email" required><br>
-                <b><span class="form_error fmail"></span></b>
-            </div>
-
-            <div class="form_item" id="phone">
-                Telephone: <br><input type="tel" id="f_phone" required><br>
-                <b><span class="form_error fphone"></span></b>
-            </div>
-
-            <div class="form_item" id="password">
-                Password: <br><input type="password" id="f_password" required><br>
-                <b><span class="form_error fpass"></span></b>
-            </div>
-
-            <input type="submit" value="Submit" class="submit_btn">
-
-        </form>
+        </footer>
+        <footer class="p-4 bg-black text-white text-center">
+            Copyright &copy 2024 All rights reserved | This template is made by Kanak Sehrawat.
+        </footer>
     </div>
-    <script src="contact.js">
 
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="contact.js"></script>
 </body>
 
 </html>

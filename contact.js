@@ -1,52 +1,32 @@
-const error = document.querySelectorAll('.form_error')
-const firstname = document.getElementById('f_first_name')
-const lastname = document.getElementById('f_last_name')
-const email = document.getElementById('f_email')
-const phone = document.getElementById('f_phone')
-const password = document.getElementById('f_password')
-const submit_btn = document.getElementsByClassName('submit_btn')
+const menu_btn = document.querySelector('#menu_btn');
+const menu_drop = document.querySelector('.menu_drop');
+const menu_items = document.querySelectorAll('.menu_drop li');
 
-function clearErrors() {
-    for (const each of error) {
-        each.innerHTML = ''
+menu_btn.addEventListener('click', () => {
+    if (menu_drop.classList.contains('hidden')) {
+        menu_drop.classList.remove('hidden');
+
+        gsap.fromTo(menu_drop,
+            { height: '0px' },
+            { height: 'auto', duration: 0.5, ease: 'power1.out' }
+        );
+
+        gsap.fromTo(menu_items,
+            { opacity: 0, y: -20 },
+            { opacity: 1, y: 0, duration: 0.3, stagger: 0.1 }
+        );
+    } else {
+        gsap.to(menu_drop, {
+            height: '0px',
+            duration: 0.5,
+            ease: 'power1.out',
+            onComplete: () => {
+                menu_drop.classList.add('hidden');
+            }
+        });
+        gsap.fromTo(menu_items,
+            { opacity: 1, y: 0 },
+            { opacity: 0, y: -20, duration: 0.1 }
+        );
     }
-}
-function setError(assigned, message) {
-    const element = document.querySelector(`.${assigned}`)
-    element.textContent = message;
-}
-
-function formValidation() {
-    clearErrors()
-    let isValid = true;
-    let username_pattern = /^[a-z]{3,12}$/i;
-    let password_pattern = /^[\w@-]{8,20}$/
-    let telephone_pattern = /^[0-9]{10}$/
-    let email_pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-
-    if (!username_pattern.test(firstname.value)) {
-        setError('fname', "Please enter a valid first name(3-12 characters only).")
-        isValid = false;
-
-    }
-    if (!username_pattern.test(lastname.value)) {
-        setError('flast', "Please enter a valid last name(3-12 characters only).")
-        isValid = false;
-    }
-    if (!email_pattern.test(email.value)) {
-        setError('fpass', "Please enter a valid email Id.")
-        isValid = false;
-    }
-    if (!telephone_pattern.test(phone.value)) {
-        setError('fphone', "Please enter a valid mobile number.")
-        isValid = false;
-    }
-    if (!password_pattern.test(password.value)) {
-        setError('fpass', "Please enter a strong password")
-        isValid = false;
-    }
-
-    return isValid;
-}
-
-
+});

@@ -14,6 +14,23 @@
 
 <body>
     <div class="main_container m-0 p-0">
+        <div class="nav_bar md:hidden p-4 bg-black flex items-center justify-between">
+            <div class="logo text-lg text-white font-bold">dirEngine.</div>
+            <div class="right_items flex items-center text-gray-500" id="menu_btn">
+                <img src="assets/icons/menu.svg"> MENU
+            </div>
+        </div>
+        <div class="menu_drop hidden text-white p-2 list-none bg-black">
+            <li class="trans p-5 hover:text-gray-400 ">Home</li>
+            <li class="trans p-5 hover:text-gray-400 ">About</li>
+            <li class="trans p-5 hover:text-gray-400 ">Tour</li>
+            <li class="trans p-5 hover:text-gray-400 ">Hotels</li>
+            <li class="trans p-5 hover:text-gray-400 ">Blog</li>
+            <li class="trans p-5 hover:text-gray-400 ">Contact</li>
+            <li> <button class=" trans w-full flex border rounded-full p-4 hover:bg-red-500 hover:border-red-500">Add
+                    listing</button></li>
+        </div>
+
         <div class="bg_container relative flex">
             <div class="left_bg absolute bg-left  left-0"></div>
             <div class="right_bg absolute bg-right right-0"></div>
