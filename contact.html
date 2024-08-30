@@ -28,8 +28,9 @@
             <li class="trans p-5 hover:text-gray-400 "><a href="hotel.html">Hotels</a></li>
             <li class="trans p-5 hover:text-gray-400 "><a href="blog.html">Blog</a></li>
             <li class="trans p-5 hover:text-gray-400 "><a href="contact.html">Contact</a></li>
-            <li> <button class=" trans w-full flex border rounded-full p-4 hover:bg-red-500 hover:border-red-500"><a href="">Add
-                    listing</a></button></li>
+            <li> <button class=" trans w-full flex border rounded-full p-4 hover:bg-red-500 hover:border-red-500"><a
+                        href="contact.html">Add
+                        listing</a></button></li>
         </div>
 
         <div class="hero_section h-screen w-screen flex flex-col items-center relative text-white">
@@ -44,8 +45,9 @@
                     <li class="trans p-5 hover:text-gray-400 cursor-pointer"><a href="blog.html">Blog</a></li>
                     <li class="trans p-5 hover:text-gray-400 cursor-pointer"><a href="contact.html">Contact</a></li>
                     <button
-                        class=" trans md:rounded-3xl border lg:rounded-full p-4 hover:text-white hover:bg-red-500 hover:border-red-500"><a href="contact.html">Add
-                        listing</a></button>
+                        class=" trans md:rounded-3xl border lg:rounded-full p-4 hover:text-white hover:bg-red-500 hover:border-red-500"><a
+                            href="contact.html">Add
+                            listing</a></button>
                 </div>
             </div>
         </div>
@@ -53,44 +55,56 @@
         <div class="flex flex-col md:flex-row items-center justify-center">
             <div class="form_submission flex flex-col justify-center items-center m-2 md:p-10 ">
                 <h1 class="text-4xl font-semibold">Registration</h1>
-                <div class="form_details" style="font-family: 'Poppins';">
-                    <div class="each_detail m-4">
-                        <div class="title text-lg">First Name: </div>
-                        <input type="text" class="outline-none py-1 px-4 my-2 border border-gray-500 w-64 md:w-80"
-                            id="first_name" required>
-                            
+                <form onsubmit="return formValidation()" method="get">
+                    <div class="form_details" style="font-family: 'Poppins';">
+                        <div class="each_detail m-4">
+                            <div class="title text-lg">First Name: </div>
+                            <input type="text" class="outline-none py-1 px-4 my-2 border border-gray-500 w-64 md:w-80"
+                                id="first_name" required>
+                            <br><b><span class="form_error efname text-red-500"></span></b>
+
+                        </div>
+                        <div class="each_detail m-4">
+                            <div class="title text-lg">Last Name:</div>
+                            <input type="text" class="outline-none py-1 px-4 my-2 border border-gray-500 w-64 md:w-80"
+                                id="last_name" required>
+                            <br><b><span class="form_error text-red-500 elname"></span></b>
+
+                        </div>
+                        <div class="each_detail m-4">
+                            <div class="title text-lg">E-mail:</div>
+                            <input type="email" class="outline-none py-1 px-4 my-2 border border-gray-500 w-64 md:w-80"
+                                id="email" required>
+                            <br><b><span class="form_error text-red-500 eemail"></span></b>
+
+                        </div>
+                        <div class="each_detail m-4">
+                            <div class="title text-lg">Telephone:</div>
+                            <input type="tel" class="outline-none py-1 px-4 my-2 border border-gray-500 w-64 md:w-80"
+                                id="phone" required>
+                            <br><b><span class="form_error text-red-500 etelephone"></span></b>
+
+                        </div>
+                        <div class="each_detail m-4">
+                            <div class="title text-lg">Password:</div>
+                            <input type="password"
+                                class="outline-none py-1 px-4 my-2 border border-gray-500 w-64 md:w-80" id="password"
+                                required>
+                            <br><b><span class="form_error text-red-500 epassword"></span></b>
+
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <button id="submit" class="trans logo border rounded-2xl bg-red-500 text-white p-3 hover:border-red-500"><a
+                                href="#">Submit</a></button>
+                        </div>
                     </div>
-                    <div class="each_detail m-4">
-                        <div class="title text-lg">Last Name:</div>
-                        <input type="text" class="outline-none py-1 px-4 my-2 border border-gray-500 w-64 md:w-80"
-                            id="first_name" required>
-                    </div>
-                    <div class="each_detail m-4">
-                        <div class="title text-lg">E-mail:</div>
-                        <input type="email" class="outline-none py-1 px-4 my-2 border border-gray-500 w-64 md:w-80" id="email"
-                            required>
-                    </div>
-                    <div class="each_detail m-4">
-                        <div class="title text-lg">Telephone:</div>
-                        <input type="tel" class="outline-none py-1 px-4 my-2 border border-gray-500 w-64 md:w-80" id="phone"
-                            required>
-                    </div>
-                    <div class="each_detail m-4">
-                        <div class="title text-lg">Password:</div>
-                        <input type="password" class="outline-none py-1 px-4 my-2 border border-gray-500 w-64 md:w-80"
-                            id="password" required>
-                    </div>
-                    <div class="flex items-center justify-center">
-                        <button
-                            class="trans border rounded-2xl bg-red-500 text-white p-4 hover:border-red-500">Submit</button>
-                    </div>
-                </div>
+                </form>
             </div>
             <div class="m-10">
                 <div class="flex items-center justify-between">
                     <div class="logo text-lg font-bold">dirEngine.</div>
-                    <button
-                        class="trans logo border rounded-2xl bg-red-500 text-white p-3 hover:border-red-500"><a href="index.html">More info</a></button>
+                    <button class="trans logo border rounded-2xl bg-red-500 text-white p-3 hover:border-red-500"><a
+                            href="index.html">More info</a></button>
                 </div>
                 <div> Feel free to Contact Us </div>
                 <img class="h-80" src="https://i.ytimg.com/vi/FLVooMrRLmw/maxresdefault.jpg" alt="">
