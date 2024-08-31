@@ -1,6 +1,7 @@
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 }
+
 .i {
     font-family: cursive;
 }
@@ -18,12 +19,19 @@ body::-webkit-scrollbar{
 
 
 @media screen and (min-width: 1439px) {
+
     .nav,
     .what {
         width: 65%;
     }
 }
 
+@media (max-width: 768px) {
+    .nav_animate {
+        display: none !important;
+        /* Hide the element on mobile screens */
+    }
+}
 
 .active {
     background-color: #78d5ef;

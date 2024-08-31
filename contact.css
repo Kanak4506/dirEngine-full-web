@@ -9,7 +9,11 @@ body::-webkit-scrollbar {
     }
 }
 
-
+@media (max-width: 768px) {
+    .nav_animate {
+        display: none !important; /* Hide the element on mobile screens */
+    }
+}
 
 .hero_bg {
     background-image: url('assets/images/bg_2.jpg');

@@ -16,13 +16,18 @@ body::-webkit-scrollbar{
         width: 65%;
     }
 }
-.text_color{
-    /* display: flex; */
-    /* align-items: center; */
-    /* position: relative;   */
-    font-family: "Poppins", sans-serif;  
+@media (max-width: 768px) {
+    .nav_animate {
+        display: none !important; /* Hide the element on mobile screens */
+    }
 }
 
+.text_color{
+    font-family: "Poppins", sans-serif;  
+}
+.nav, button{
+    font-family: "poppins";
+}
 .text h1{
     color: #9b9393;
 }

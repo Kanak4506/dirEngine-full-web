@@ -15,6 +15,11 @@ body::-webkit-scrollbar {
         width: 65%;
     }
 }
+@media (max-width: 768px) {
+    .nav_animate {
+        display: none !important; /* Hide the element on mobile screens */
+    }
+}
 .move, .moves {
     background-color: #3fa981;
     font-family: cursive;
