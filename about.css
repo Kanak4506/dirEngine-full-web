@@ -11,12 +11,17 @@ body::-webkit-scrollbar {
 }
 
 .left_bg,
-.right_bg {
+.right_bg,
+.image_bg {
     width: 50vw;
     background-image: url('assets/images/bg_2.jpg');
     height: 64.8vh;
 }
 
+.image_bg{
+    background-image: url('assets/images/bg_2.jpg');
+    width: 100vw;
+}
 
 @media screen and (min-width: 1439px) {
 
@@ -29,7 +34,6 @@ body::-webkit-scrollbar {
 @media (max-width: 768px) {
     .nav_animate {
         display: none !important;
-        /* Hide the element on mobile screens */
     }
 }
 
