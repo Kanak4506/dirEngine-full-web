@@ -7,6 +7,9 @@ body::-webkit-scrollbar {
     .nav {
         width: 65%;
     }
+    .navv{
+        width: 78%;
+    }
 }
 
 @media (max-width: 768px) {

@@ -9,6 +9,9 @@ body::-webkit-scrollbar {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.nav{
+    font-family: "poppins";
+}
 
 @media screen and (min-width: 1439px) {
     .nav {

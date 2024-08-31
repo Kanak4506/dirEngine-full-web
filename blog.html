@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>DirEngine|Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="contact.css">
@@ -57,7 +57,8 @@
             </div>
         </div>
         <div class="hero_section h-screen w-screen flex flex-col items-center relative text-white">
-            <div class="hero_bg absolute h-screen w-screen"></div>
+            <div class="hero_bg absolute h-screen w-screen" style="background-image: url('assets/images/bg_4.jpg');">
+            </div>
             <div class="nav text-white hidden md:flex justify-between my-4 items-center p-3"
                 style="font-family: 'poppins';">
                 <div class="logo text-xl font-bold">dirEngine.</div>
@@ -80,74 +81,116 @@
                         <div class="border-t-2 opacity-25 border-white h-1 "></div>
                     </div>
                     <div class="m-2">
-                        <div class="opacity-75 tracking-widest">CONTACT</div>
+                        <div class="opacity-75 tracking-widest">Blog</div>
                         <div class="border-t-2 opacity-25 border-white h-1 "></div>
                     </div>
                 </div>
-                <h1 class="tracking-wide font-bold text-6xl">Contact Us</h1>
+                <h1 class="tracking-wide font-bold text-6xl">Tips & Articles</h1>
             </div>
+
         </div>
 
-        <div class="flex flex-col md:flex-row items-center justify-center">
-            <div class="form_submission flex flex-col justify-center items-center m-2 md:p-10 ">
-                <h1 class="text-4xl font-semibold">Registration</h1>
-                <form onsubmit="return formValidation()" method="get">
-                    <div class="form_details" style="font-family: 'Poppins';">
-                        <div class="each_detail m-4">
-                            <div class="title text-lg">First Name: </div>
-                            <input type="text" class="outline-none py-1 px-4 my-2 border border-gray-500 w-64 md:w-80"
-                                id="first_name" required>
-                            <br><b><span class="form_error efname text-red-500"></span></b>
-
+        <div class="flex  my-10 flex-col justify-center items-center bg-white" style="background-color: #f8faff;">
+            <div>
+                <div class="flex justify-center items-center">
+                    <div class="navv">
+                        <h1 class="text-gray-500 my-2">Recent Blog</h1>
+                        <h1 class="text-2xl"><span class="font-bold">Tips</span> & Articles</h1>
+                    </div>
+                </div>
+                <div class="container sm:m-2 sm:m-8 my-24 flex-wrap flex justify-center items-center">
+                    <div class="w-72 border border-inherit each_card m-4">
+                        <img class="w-72 h-60" src="assets/images/asset 19.jpeg" alt="">
+                        <div class="m-4 text-gray-300 ">Tips, Travel</div>
+                        <p class="m-4">8 Best homestay in Philippines that you dont't miss out</p>
+                        <div class="mx-4 text-gray-400 text-sm">
+                            August 12, 2018 Admin
                         </div>
-                        <div class="each_detail m-4">
-                            <div class="title text-lg">Last Name:</div>
-                            <input type="text" class="outline-none py-1 px-4 my-2 border border-gray-500 w-64 md:w-80"
-                                id="last_name" required>
-                            <br><b><span class="form_error text-red-500 elname"></span></b>
-
-                        </div>
-                        <div class="each_detail m-4">
-                            <div class="title text-lg">E-mail:</div>
-                            <input type="email" class="outline-none py-1 px-4 my-2 border border-gray-500 w-64 md:w-80"
-                                id="email" required>
-                            <br><b><span class="form_error text-red-500 eemail"></span></b>
-
-                        </div>
-                        <div class="each_detail m-4">
-                            <div class="title text-lg">Telephone:</div>
-                            <input type="tel" class="outline-none py-1 px-4 my-2 border border-gray-500 w-64 md:w-80"
-                                id="phone" required>
-                            <br><b><span class="form_error text-red-500 etelephone"></span></b>
-
-                        </div>
-                        <div class="each_detail m-4">
-                            <div class="title text-lg">Password:</div>
-                            <input type="password"
-                                class="outline-none py-1 px-4 my-2 border border-gray-500 w-64 md:w-80" id="password"
-                                required>
-                            <br><b><span class="form_error text-red-500 epassword"></span></b>
-
-                        </div>
-                        <div class="flex items-center justify-center">
-                            <button id="submit"
-                                class="trans logo border rounded-2xl bg-red-500 text-white p-3 hover:border-red-500"><a
-                                    href="#">Submit</a></button>
+                        <div class="mx-4 mb-10 py-2 text-gray-400 text-sm">
+                            <i class="ri-chat-4-fill"></i> 3
                         </div>
                     </div>
-                </form>
-            </div>
-            <div class="m-10">
-                <div class="flex items-center justify-between">
-                    <div class="logo text-lg font-bold">dirEngine.</div>
-                    <button class="trans logo border rounded-2xl bg-red-500 text-white p-3 hover:border-red-500"><a
-                            href="index.html">More info</a></button>
-                </div>
-                <div> Feel free to Contact Us </div>
-                <img class="h-80" src="https://i.ytimg.com/vi/FLVooMrRLmw/maxresdefault.jpg" alt="">
+                    <div class="w-72 border border-inherit each_card m-4">
+                        <img class="w-72 h-60" src="assets/images/asset 20.jpeg" alt="">
+                        <div class="m-4 text-gray-300 ">Tips, Travel</div>
+                        <p class="m-4">8 Best homestay in Philippines that you dont't miss out</p>
+                        <div class="mx-4 text-gray-400 text-sm">
+                            August 12, 2018 Admin
+                        </div>
+                        <div class="mx-4 mb-10 py-2 text-gray-400 text-sm">
+                            <i class="ri-chat-4-fill"></i> 3
+                        </div>
+                    </div>
+                    <div class="w-72 border border-inherit each_card m-4">
+                        <img class="w-72 h-60" src="assets/images/asset 21.jpeg" alt="">
+                        <div class="m-4 text-gray-300 ">Tips, Travel</div>
+                        <p class="m-4">8 Best homestay in Philippines that you dont't miss out</p>
+                        <div class="mx-4 text-gray-400 text-sm">
+                            August 12, 2018 Admin
+                        </div>
+                        <div class="mx-4 mb-10 py-2 text-gray-400 text-sm">
+                            <i class="ri-chat-4-fill"></i> 3
+                        </div>
+                    </div>
+                    <div class="w-72 border border-inherit each_card m-4">
+                        <img class="w-72 h-60" src="assets/images/asset 22.jpeg" alt="">
+                        <div class="m-4 text-gray-300 ">Tips, Travel</div>
+                        <p class="m-4">8 Best homestay in Philippines that you dont't miss out</p>
+                        <div class="mx-4 text-gray-400 text-sm">
+                            August 12, 2018 Admin
+                        </div>
+                        <div class="mx-4 mb-10 py-2 text-gray-400 text-sm">
+                            <i class="ri-chat-4-fill"></i> 3
+                        </div>
+                    </div>
+                    <div class="w-72 border border-inherit each_card m-4">
+                        <img class="w-72 h-60" src="assets/images/image_5.jpg" alt="">
+                        <div class="m-4 text-gray-300 ">Tips, Travel</div>
+                        <p class="m-4">8 Best homestay in Philippines that you dont't miss out</p>
+                        <div class="mx-4 text-gray-400 text-sm">
+                            August 12, 2018 Admin
+                        </div>
+                        <div class="mx-4 mb-10 py-2 text-gray-400 text-sm">
+                            <i class="ri-chat-4-fill"></i> 3
+                        </div>
+                    </div>
 
-                <div>Contact Information:- kanaksehrawat456@gmail.com</div>
-                <div class="font-medium my-2">Share this to everyone...</div>
+                    <div class="w-72 border border-inherit each_card m-4">
+                        <img class="w-72 h-60" src="assets/images/image_6.jpg" alt="">
+                        <div class="m-4 text-gray-300 ">Tips, Travel</div>
+                        <p class="m-4">8 Best homestay in Philippines that you dont't miss out</p>
+                        <div class="mx-4 text-gray-400 text-sm">
+                            August 12, 2018 Admin
+                        </div>
+                        <div class="mx-4 mb-10 py-2 text-gray-400 text-sm">
+                            <i class="ri-chat-4-fill"></i> 3
+                        </div>
+                    </div>
+                    <div class="w-72 border border-inherit each_card m-4">
+                        <img class="w-72 h-60" src="assets/images/image_7.jpg" alt="">
+                        <div class="m-4 text-gray-300 ">Tips, Travel</div>
+                        <p class="m-4">8 Best homestay in Philippines that you dont't miss out</p>
+                        <div class="mx-4 text-gray-400 text-sm">
+                            August 12, 2018 Admin
+                        </div>
+                        <div class="mx-4 mb-10 py-2 text-gray-400 text-sm">
+                            <i class="ri-chat-4-fill"></i> 3
+                        </div>
+                    </div>
+                    <div class="w-72 border border-inherit each_card m-4">
+                        <img class="w-72 h-60" src="assets/images/image_8.jpg" alt="">
+                        <div class="m-4 text-gray-300 ">Tips, Travel</div>
+                        <p class="m-4">8 Best homestay in Philippines that you dont't miss out</p>
+                        <div class="mx-4 text-gray-400 text-sm">
+                            August 12, 2018 Admin
+                        </div>
+                        <div class="mx-4 mb-10 py-2 text-gray-400 text-sm">
+                            <i class="ri-chat-4-fill"></i> 3
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
         </div>
 
@@ -200,12 +243,12 @@
         <footer class="p-4 bg-black text-white text-center">
             Copyright &copy 2024 All rights reserved | This template is made by Kanak Sehrawat.
         </footer>
-    </div>
 
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="contact.js"></script>
+    <script src="blog.js"></script>
 </body>
 
 </html>
