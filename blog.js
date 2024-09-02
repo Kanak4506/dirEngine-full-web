@@ -31,7 +31,7 @@ menu_btn.addEventListener('click', () => {
     }
 });
 
-
+//forgot to add
 const scrollTriggerPoint = document.body.scrollHeight * 0.15;
 
 window.addEventListener('scroll', () => {
